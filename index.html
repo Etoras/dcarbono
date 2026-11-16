@@ -216,6 +216,14 @@ footer{border-top:0.5px solid var(--stone);padding:2rem 2.5rem;display:flex;just
 .k-foot a{color:var(--terra-light);text-decoration:none;font-style:normal;}
 .k-foot a:hover{text-decoration:underline;}
 
+/* ── LILLAVERK (Aktuellt) ────────────────────────────────────── */
+.lv{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:2.6rem;align-items:start;margin-bottom:3.6rem;padding-bottom:3rem;border-bottom:0.5px solid var(--stone);}
+.lv figure{margin:0;}
+.lv img{display:block;width:100%;height:auto;border:0.5px solid var(--stone);}
+.lv figcaption{font-size:11px;color:var(--faint);font-style:italic;margin-top:0.6rem;line-height:1.6;}
+.lv .k-lead{max-width:none;}
+@media(max-width:800px){.lv{grid-template-columns:1fr;gap:1.6rem;}.lv figure{max-width:320px;}}
+
 /* ── PRICING SECTION ─────────────────────────────────────────── */
 .og4{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--stone);}
 .oc4{background:var(--charcoal);padding:2.2rem 1.8rem;transition:background 0.3s;}
@@ -557,6 +565,28 @@ footer{border-top:0.5px solid var(--stone);padding:2rem 2.5rem;display:flex;just
   <div class="sec">
     <div class="eye">Bitácora · logg &amp; på gång</div>
     <div class="stitle"><em>Aktuellt</em> — det som varit, det som kommer</div>
+
+    <div class="k-chips">
+      <span class="k-chip">Nytt · 14 nov 2026</span>
+      <span class="k-chip">Lillaverk</span>
+      <span class="k-chip">Utställt verk</span>
+    </div>
+
+    <div class="lv">
+      <figure>
+        <img src="img/lillaverk.jpg" width="900" height="1162" loading="lazy" alt="Lillaverk: målning i blått, orange och grönt med geometriska former, två cirklar och en grå figur i mitten">
+        <figcaption>Lillaverk · duk 70 × 50 cm · blandteknik: olja, grafit och akryl · 2026</figcaption>
+      </figure>
+      <div>
+        <div class="k-lead">Lillaverk — <em>ett verk i kvarteret</em>, nu på väggen hos Barley’s.</div>
+        <div class="k-place">Verket föddes när Kvilleverk visades på det offentliga torget. KUAM:s tredje omgång har gett praktiken idén om ett levande galleri: under arbetets gång delades Lillaverk på lördagarna på <strong>Barley’s Food Factory</strong>. Sedan den 14 november hänger det där, på väggen i det högra hörnet. Inget mer än så: ett verk i en bar i kvarteret där jag själv bor. Nya verk kommer att sällskapa det.</div>
+        <div class="k-tags">
+          <span class="pill k-on">Utställt nu</span>
+          <span class="pill">Barley’s Food Factory</span>
+          <span class="pill">KUAM · Omgång 3</span>
+        </div>
+      </div>
+    </div>
 
     <div class="k-chips">
       <span class="k-chip">Nytt · hösten 2026</span>
