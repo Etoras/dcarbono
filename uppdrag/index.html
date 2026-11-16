@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uppdrag &amp; föreläsningar — ©dCarbono | Göteborg</title>
+<meta name="description" content="Workshops för skolor, föreläsningar, handledning och konstnärlig ledning med Héctor García-Jorquera, ©dCarbono. Kulturpolitik i praktiken. Göteborg.">
+<meta name="author" content="Héctor García-Jorquera — ©dCarbono">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://dcarbono.se/uppdrag/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dcarbono.se/uppdrag/">
+<meta property="og:title" content="Uppdrag &amp; föreläsningar — ©dCarbono">
+<meta property="og:description" content="Kulturpolitik i praktiken. Konst och lärande i det offentliga rummet. Workshops, föreläsningar, handledning och konstnärlig ledning.">
+<meta property="og:image" content="https://dcarbono.se/og-image.png">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:site_name" content="©dCarbono">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* Samma tokens och komponenter som dcarbono.se (index.html) */
+:root{--black:#0e0d0b;--charcoal:#1a1916;--stone:#3a3830;--warm:#f5f0e8;--muted:#9a9488;--faint:#4a4840;--terra:#D85A30;--terra-light:#f0997b;--terra-dark:#a03f1e;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--black);color:var(--warm);font-family:'DM Sans',sans-serif;font-weight:300;overflow-x:hidden;}
+a:focus-visible{outline:1.5px solid var(--terra);outline-offset:3px;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1rem 2.5rem;border-bottom:0.5px solid rgba(245,240,232,0.08);background:rgba(14,13,11,0.92);}
+.nb{text-decoration:none;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--terra);}
+.nl{display:flex;gap:2rem;list-style:none;}
+.nl a{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);text-decoration:none;}
+.nl a:hover{color:var(--warm);}
+.hero{padding:10rem 2.5rem 4.5rem;max-width:1080px;margin:0 auto;position:relative;}
+.hbg{position:absolute;top:50%;left:1rem;transform:translateY(-50%);font-family:'Cormorant Garamond',serif;font-size:clamp(90px,16vw,210px);font-weight:300;font-style:italic;color:rgba(216,90,48,0.04);white-space:nowrap;pointer-events:none;line-height:1;}
+.he{font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:var(--terra);margin-bottom:1.5rem;}
+.hh{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,7vw,86px);font-weight:300;line-height:1.05;}
+.hh em{font-style:italic;color:var(--terra);}
+.hs{margin-top:1.5rem;max-width:580px;font-size:15px;line-height:1.75;color:var(--muted);}
+.hs strong{color:var(--warm);font-weight:400;}
+.cta{display:flex;align-items:flex-start;flex-wrap:wrap;gap:1rem;margin-top:2.2rem;}
+.btn{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;padding:0.9rem 1.6rem;border:0.5px solid var(--terra);color:var(--terra-light);transition:background 0.3s,color 0.3s;}
+.btn.fill{background:var(--terra);color:var(--black);}
+.btn:hover{background:var(--terra-dark);color:var(--warm);}
+.mq{background:var(--terra);padding:0.8rem 2.5rem;text-align:center;}
+.mq-i{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;font-weight:300;color:rgba(14,13,11,0.8);}
+.sec{padding:6rem 2.5rem;max-width:1080px;margin:0 auto;}
+.bg-ch{background:var(--charcoal);}
+.eye{font-size:9px;letter-spacing:0.28em;text-transform:uppercase;color:var(--terra);margin-bottom:1rem;}
+.stitle{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,52px);font-weight:300;line-height:1.15;margin-bottom:2.5rem;}
+.stitle em{font-style:italic;color:var(--terra);}
+.og{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--stone);}
+.oc{background:var(--charcoal);padding:2.2rem 1.8rem;transition:background 0.3s;display:flex;flex-direction:column;}
+.oc:hover{background:#222119;}
+.on{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:300;color:var(--stone);line-height:1;margin-bottom:1.2rem;transition:color 0.3s;}
+.oc:hover .on{color:var(--terra);}
+.ot{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;margin-bottom:0.9rem;line-height:1.3;}
+.ox{font-size:13px;line-height:1.8;color:var(--muted);margin-bottom:1rem;}
+.ofor{font-size:11px;color:var(--faint);line-height:1.7;font-style:italic;margin-bottom:1.2rem;}
+.ofor span{color:var(--terra-light);font-style:normal;}
+.price{margin-top:auto;padding-top:1rem;border-top:0.5px solid var(--stone);display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;}
+.price b{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--terra-light);}
+.price small{font-size:11px;color:var(--faint);}
+.moms-note{font-size:11px;color:var(--faint);font-style:italic;margin-top:1.2rem;}
+.moms-note a{color:var(--terra-light);}
+.qg{display:grid;grid-template-columns:220px 1fr;gap:4rem;align-items:start;}
+.ql{border-left:2px solid var(--terra);padding-left:1.2rem;}
+.qname{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:400;}
+.qrole{font-size:12px;color:var(--muted);margin-top:0.3rem;}
+.qr p{font-size:15px;line-height:1.85;color:#c0bab0;margin-bottom:1.2rem;max-width:62ch;}
+.qr p strong{color:var(--warm);font-weight:400;}
+.pull{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;line-height:1.65;border-left:1.5px solid var(--terra);padding-left:1.3rem;margin:1.8rem 0;color:var(--warm);}
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--stone);}
+.step{background:var(--charcoal);padding:1.8rem 1.5rem;}
+.step-n{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:300;color:rgba(216,90,48,0.25);line-height:1;margin-bottom:0.8rem;}
+.step-t{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:400;margin-bottom:0.5rem;}
+.step-x{font-size:12px;line-height:1.75;color:var(--muted);}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-top:3.5rem;}
+.cb{margin-bottom:1.8rem;}
+.cl{font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--terra);margin-bottom:0.4rem;}
+.cv{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--warm);text-decoration:none;display:block;transition:color 0.2s;}
+.cv:hover{color:var(--terra-light);}
+.ci p{font-size:15px;line-height:1.75;color:var(--muted);}
+footer{border-top:0.5px solid var(--stone);padding:2rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
+.fb{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--terra);}
+.fm{font-size:11px;color:var(--faint);text-align:right;line-height:1.8;}
+.fm a{color:var(--faint);text-decoration:none;}
+@media(max-width:800px){
+  nav{padding:1rem 1.5rem;}
+  .nl{gap:1rem;}.nl a{font-size:9px;}
+  .hero{padding:10rem 1.5rem 3.5rem;}
+  .sec{padding:4rem 1.5rem;}
+  .og{grid-template-columns:1fr;}
+  .qg{grid-template-columns:1fr;gap:2rem;}
+  .steps-grid{grid-template-columns:1fr 1fr;}
+  .cg{grid-template-columns:1fr;gap:2rem;}
+  footer{padding:1.5rem;flex-direction:column;align-items:flex-start;}
+  .fm{text-align:left;}
+}
+@media(max-width:900px){nav{flex-wrap:wrap;gap:0.6rem;}.nl{flex-wrap:wrap;gap:0.4rem 1rem;}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}*{transition:none!important;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nb">©de Carbono</a>
+  <ul class="nl">
+    <li><a href="/#kuam">KUAM</a></li>
+    <li><a href="/#aktuellt">Aktuellt</a></li>
+    <li><a href="/#manifest">Manifest</a></li>
+    <li><a href="/#quien">Om HGJ</a></li>
+    <li><a href="/#erbjudande">Erbjudande</a></li>
+    <li><a href="/#plattformar">Plattformar</a></li>
+    <li><a href="/#priser">Priser</a></li>
+    <li><a href="/#bokar">Boka</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <div class="hbg" aria-hidden="true">uppdrag</div>
+  <p class="he">Uppdrag &amp; föreläsningar · Göteborg</p>
+  <h1 class="hh">Kulturpolitik i <em>praktiken</em></h1>
+  <p class="hs">Jag hjälper <strong>skolor, kommuner, regioner och kulturinstitutioner</strong> att göra konst och lärande till en levande del av det offentliga rummet, och att tänka kulturpolitik utifrån praktiken.</p>
+  <div class="cta">
+    <a class="btn fill" href="#kontakt">Begär förslag</a>
+    <a class="btn" href="/#priser">Se hela prislistan</a>
+  </div>
+</header>
+
+<div class="mq"><span class="mq-i">Närheten · Nuet · Kroppen</span></div>
+
+<section class="bg-ch" aria-labelledby="h-uppdrag">
+  <div class="sec">
+    <p class="eye">Fyra sätt att arbeta tillsammans</p>
+    <h2 class="stitle" id="h-uppdrag">Vad ni kan <em>beställa</em></h2>
+    <div class="og">
+      <article class="oc">
+        <div class="on">01</div>
+        <h3 class="ot">Workshops för skolor &amp; förskolor</h3>
+        <p class="ox">KUAM-metoden i praktiken: bild, rörelse, språk, musik och material. Anpassat till Lgr22 och Lpfö18. Processen värderas, inte resultatet.</p>
+        <p class="ofor"><span>För:</span> skolor, förskolor, kulturskolor · 3–18 år</p>
+        <div class="price"><b>från 5 000 kr</b><small>per lektion (60 min)</small></div>
+      </article>
+      <article class="oc">
+        <div class="on">02</div>
+        <h3 class="ot">Föreläsningar &amp; handledning</h3>
+        <p class="ox">Kulturpolitik i praktiken, performativ pedagogik och Docencia de Carbono: en undervisning som lämnar levande och ansvariga spår.</p>
+        <p class="ofor"><span>För:</span> regioner, förvaltningar, nämnder, pedagoger, kulturarbetare</p>
+        <div class="price"><b>8 500 kr</b><small>föreläsning upp till 2 tim</small></div>
+      </article>
+      <article class="oc">
+        <div class="on">03</div>
+        <h3 class="ot">Kuratoriska projekt &amp; konstnärlig ledning</h3>
+        <p class="ox">Site-specific interventioner, residens och deltagande processer i offentliga rum och kulturinstitutioner. PAIAP och Re·Sense.</p>
+        <p class="ofor"><span>För:</span> museer, bibliotek, kommuner, kulturprojekt</p>
+        <div class="price"><b>8 500 kr</b><small>dagsarvode · residens enligt offert</small></div>
+      </article>
+      <article class="oc">
+        <div class="on">04</div>
+        <h3 class="ot">Castellano &amp; interkulturell kompetens</h3>
+        <p class="ox">Språk och affärskultur för ett Sverige i ett nytt handelslandskap efter EU-Mercosur-avtalet.</p>
+        <p class="ofor"><span>För:</span> företag, HR-avdelningar, studieförbund</p>
+        <div class="price"><b>12 000 kr</b><small>halvdag för team · lektioner från 650 kr/tim</small></div>
+      </article>
+    </div>
+    <p class="moms-note">Alla priser exkl. moms. Resa och logi tillkommer. <a href="/#priser">Hela prislistan finns på startsidan.</a></p>
+  </div>
+</section>
+
+<section aria-labelledby="h-om">
+  <div class="sec qg">
+    <div class="ql">
+      <p class="qname" id="h-om">Héctor García-Jorquera</p>
+      <p class="qrole">Konstnärlig forskare &amp; pedagog · MA, Akademin Valand, Göteborgs universitet</p>
+    </div>
+    <div class="qr">
+      <p>Född i Chile, uppvuxen mellan Chile, Argentina och Brasilien, verksam i Göteborg. Jag arbetar med performativ konst, språk och pedagogik i det offentliga rummet, på <strong>svenska, spanska, portugisiska och engelska</strong>.</p>
+      <p class="pull">Jag är mest intresserad av de personer som inte ser sig själva som kreativa. Där vill jag fokusera.</p>
+      <p>Mina analyser av svensk kulturpolitik bygger på konkreta projekt: KUAM, Re·Sense och PAIAP. Där prövas frågor om jämlik delaktighet, stöd till experimentell konst och skolan som kulturarena.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-ch" id="kontakt" aria-labelledby="h-boka">
+  <div class="sec">
+    <p class="eye">Kontakt</p>
+    <h2 class="stitle" id="h-boka">Begär ett <em>förslag</em></h2>
+    <div class="cg" style="margin-top:0">
+      <div>
+        <div class="cb"><p class="cl">E-post</p><a class="cv" href="mailto:kontakt@dcarbono.se">kontakt@dcarbono.se</a></div>
+        <div class="cb"><p class="cl">Telefon</p><a class="cv" href="tel:+46733003737">+46 73 300 37 37</a></div>
+        <div class="cb"><p class="cl">LinkedIn</p><a class="cv" href="https://www.linkedin.com/in/hectorguillermo" target="_blank" rel="noopener">hectorguillermo</a></div>
+      </div>
+      <div class="ci">
+        <p>Planerar ni våren 2027? Skolor, förvaltningar och kulturinstitutioner lägger sina planer nu. Hör av er, så återkommer jag med ett förslag inom 48 timmar.</p>
+        <p style="margin-top:1rem;"><a class="btn" href="/#bokar">Så går en bokning till</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fb">©de Carbono — HGJ, Docência, Art &amp; Språk</div>
+  <div class="fm">
+    Org.nr 700523-6877 · F-skatt · Moms · VAT<br>
+    <a href="mailto:kontakt@dcarbono.se">kontakt@dcarbono.se</a> ·
+    <a href="tel:+46733003737">+46 73 300 37 37</a> ·
+    <a href="https://dcarbono.se">dcarbono.se</a> ·
+    <a href="https://paiap.org">paiap.org</a>
+  </div>
+</footer>
+
+</body>
+</html>
