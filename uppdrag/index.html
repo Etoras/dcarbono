@@ -16,16 +16,16 @@
 <meta property="og:locale" content="sv_SE">
 <meta property="og:site_name" content="©dCarbono">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,600;1,300&family=IBM+Plex+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap">
 <style>
 body{margin:0}img{max-width:100%}
 /* Layout: graphite page like Héctor's decks; hero = text + chalk-painted well cover; offers as a 2x2 of equal specs; quiet background and contact at the foot */
 :root{
   --bg:#1e2124; --surface:#262a2e; --line:#3a3f45;
   --ink:#e8eaec; --muted:#a3a9b0; --accent:#3aa9e2;
-  --display:"Albert Sans",Avenir,"Segoe UI",system-ui,sans-serif;
-  --body:"Albert Sans",Avenir,"Segoe UI",system-ui,sans-serif;
-  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --display:"Cormorant Garamond",Georgia,serif;
+  --body:"DM Sans",system-ui,sans-serif;
+  --mono:"DM Sans",system-ui,sans-serif;
   color-scheme:dark;
 }
 @media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
@@ -33,14 +33,14 @@ body{margin:0}img{max-width:100%}
 :root[data-theme="light"]{
   --bg:#f3f5f7; --surface:#ffffff; --line:#d7dce1; --ink:#1c2026; --muted:#5b636c; --accent:#1677ad; color-scheme:light}
 
-body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-weight:300;font-size:17px;line-height:1.6;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .wrap{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:88px;padding-block:56px 72px}
 h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
 p{margin:0}
 a{color:var(--accent)}
 a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
 
 /* hero */
 .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
@@ -62,11 +62,11 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent);outline-offse
 .section-head p{color:var(--muted);max-width:40em}
 .offers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
 .offer{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:14px;min-width:0}
-.offer .kind{font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
-.offer h3{font-size:24px;font-weight:400;line-height:1.2}
+.offer .kind{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.offer h3{font-size:27px;font-weight:400;line-height:1.2}
 .offer p{color:var(--muted)}
 .spec{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:4px 0 0;padding-top:16px;border-top:1px solid var(--line);font-size:15px}
-.spec dt{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-top:2px}
+.spec dt{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding-top:2px}
 .spec dd{margin:0}
 .terms{margin-top:24px;font-size:15px;color:var(--muted)}
 
@@ -75,6 +75,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent);outline-offse
 .about > *{min-width:0}
 .about h2{font-weight:300;font-size:clamp(28px,4vw,40px)}
 .about .text{display:flex;flex-direction:column;gap:18px;max-width:38em}
+.roles{font-family:var(--display);font-style:italic;font-size:21px;line-height:1.5;color:var(--ink)}
 .facts{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;border-left:2px solid var(--accent);padding-left:18px}
 
 /* contact */
@@ -84,7 +85,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent);outline-offse
 footer{font-size:13px;color:var(--muted)}
 .topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:14px}
 .topbar a{text-decoration:none}
-.topbar .home{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.topbar .home{font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
 .topbar .home:hover{color:var(--ink)}
 .direct{display:flex;flex-wrap:wrap;gap:8px 28px;font-size:15px}
 
@@ -115,8 +116,8 @@ footer{font-size:13px;color:var(--muted)}
       </div>
     </div>
     <figure>
-      <img src="/img/uppdrag-krita.jpg" alt="Gatubrunn målad med färgade krittorg runt bokstaven A">
-      <figcaption>Krita på gatubrunn, Göteborg</figcaption>
+      <img src="/img/uppdrag-krita.jpg" alt="Gatubrunn målad med färgad krita i rutor runt bokstaven A, gjord av förskolebarn">
+      <figcaption><em>Platsspecifik kromatisk intervention.</em> Med barnen, 3–5 år, på Stora Björn förskola. Kreativ Verkstad i Bergsjön (KViB), 2018–2023.</figcaption>
     </figure>
   </header>
 
@@ -141,7 +142,7 @@ footer{font-size:13px;color:var(--muted)}
       </article>
       <article class="offer">
         <span class="kind">Fortbildning</span>
-        <h3>Docencia de Carbono</h3>
+        <h3>Docência de Carbono</h3>
         <p>En undervisning som lämnar levande och ansvariga spår, inte bara mätbart innehåll. Maktkritisk, våldsmedveten och omsorgsbaserad.</p>
         <dl class="spec"><dt>För</dt><dd>Lärare, pedagoger, cirkelledare, folkhögskolor</dd><dt>Format</dt><dd>1 dag eller 2 halvdagar</dd><dt>Resultat</dt><dd>Metoder att använda direkt i egen grupp</dd></dl>
       </article>
@@ -161,11 +162,12 @@ footer{font-size:13px;color:var(--muted)}
       <h2 id="h-bak">Konstnärlig forskare och pedagog</h2>
     </div>
     <div class="text">
-      <p>Född i Chile, uppvuxen mellan Chile, Argentina och Brasilien. Sedan 25 år verksam i Sverige med performativ konst, språk och pedagogik i det offentliga rummet.</p>
+      <p>Född i Chile, uppvuxen mellan Brasilien, Argentina och Chile. Sedan 25 år verksam i Sverige med performativ konst, språk och pedagogik i det offentliga rummet.</p>
+      <p class="roles">Dramaturgi · skådespeleri · teaterregi · internationell kulturprojektledning · konstnärlig ledning · frilansande curator · forskare och pedagog.</p>
       <ul class="facts">
         <li>MA i samtida performativa konster, Akademin Valand, Göteborgs universitet</li>
         <li>KUAM, en levande verkstad för kreativ utveckling på Hisingen</li>
-        <li>Re-Sense, sensorisk och somatisk konstpedagogik i Bergsjön och Luleå</li>
+        <li>Re-Sense, sensorisk dramaturgi: en metod och ett forskningsprojekt, genomfört i Borås, Falkenberg och Hindås</li>
         <li>Arbetar på svenska, spanska, portugisiska och engelska</li>
       </ul>
     </div>
